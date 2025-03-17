@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automático</title>
+
+     <!-- Bootstrap CSS desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Pantalla de usuario y contraseña -->
+    <div id="pantallaUsuario">
+        <h1>Cajero automático</h1>
+        <div class="contenedor">
+            <label for="rut">Introduce tu RUT:</label>
+            <input type="text" id="rut" placeholder="Ej. 12345678-9" maxlength="10">
+
+            <label for="pin">Introduce tu contraseña:</label>
+            <input type="password" id="pin" placeholder="Contraseña de 4 dígitos" maxlength="4">
+
+            <button id="ingresar" class="btn btn-primary">Ingresar</button>
+        </div>
+        
+    </div>
+
+    <!-- Pantalla de operaciones -->
+    <div id="pantallaOperaciones" class="ocultar">
+        <h1>Cajero automático</h1>
+
+        <h3 id="saludo"></h3>
+
+        <h4>¿Que operación desea realizar?</h4>
+
+        <div class="contenedor2">
+            <button id="retirarMonto" class="btn btn-primary">Retirar monto</button>
+            <button id="ingresarMonto" class="btn btn-primary">Ingresar monto</button>
+            <button id="consultar" class="btn btn-primary">Consultar monto</button>
+        </div>
+    </div>
+
+    <!-- Pantalla de montos (consultar saldo) -->
+    <div id="pantallaConsulta" class="ocultar">
+        <h1>Cajero automático</h1>
+
+        <div id="textoSaldo" class="textoMonto"></div>
+
+        <button id="cancelar" class="btn btn-danger">Cancelar operación</button>
+    </div>
+
+    <!-- Pantalla de montos (retiro) -->
+    <div id="pantallaRetiro" class="ocultar">
+        <h1>Cajero automático</h1>
+
+        <h2>Seleccione la operación:</h2>
+
+        <div class="contenedor3">
+            <button id="boton100" class="btn btn-success">$100</button>
+            <button id="boton200" class="btn btn-success">$200</button>
+            <button id="boton500" class="btn btn-success">$500</button>
+            <button id="boton800" class="btn btn-success">$800</button>
+            <button id="boton900" class="btn btn-success">$900</button>
+            <button id="botonotro" class="btn btn-success">Otro monto</button>
+        </div>
+
+        <div class="opciones">
+            <button id="cancelar2" class="btn btn-danger">Cancelar operación</button>
+            <button id="consultar2" class="btn btn-info">Consultar monto</button>
+        </div>
+
+        <div id="textoSaldo2" class="textoMonto"></div>
+    </div>
+
+
+    <!-- Pantalla de montos (ingresos) -->
+    <div id="pantallaIngreso" class="ocultar">
+        <h1>Cajero automático</h1>
+
+        <h2>Seleccione la operación:</h2>
+
+        <div class="contenedor3">
+            <button id="2boton100" class="btn btn-success">$100</button>
+            <button id="2boton200" class="btn btn-success">$200</button>
+            <button id="2boton500" class="btn btn-success">$500</button>
+            <button id="2boton800" class="btn btn-success">$800</button>
+            <button id="2boton900" class="btn btn-success">$900</button>
+            <button id="2botonotro" class="btn btn-success">Otro monto</button>
+        </div>
+
+        <div class="opciones">
+            <button id="cancelar3" class="btn btn-danger">Cancelar operación</button>
+            <button id="consultar3" class="btn btn-info">Consultar monto</button>
+        </div>
+
+        <div id="textoSaldo3" class="textoMonto"></div>
+    </div>
+
+    <!-- Bootstrap JS y Popper.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/primero.js"></script>
+</body>
+
+</html>
