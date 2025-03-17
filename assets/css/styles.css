@@ -4,7 +4,8 @@
 
 body {
     display: flex;
-    background-image: url('https://depositphotos.com/stock-photos/bank.html'); 
+    background-image: url('/assets/css/imagendebanco.jpg'); 
+    background-color: rgb(27, 39, 71);
     background-size: cover; 
     background-position: center;
     color: white;
