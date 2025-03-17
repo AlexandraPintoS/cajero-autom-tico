@@ -4,7 +4,7 @@
 
 body {
     display: flex;
-    background: url('assets/css/imagendebanco.jpg');
+    background-color: rgb(27, 39, 71);
     background-size: cover; 
     background-position: center;
     color: white;
