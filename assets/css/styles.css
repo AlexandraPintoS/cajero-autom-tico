@@ -59,7 +59,11 @@ h4 {
     height: 100px;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 80px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .contenedor {
